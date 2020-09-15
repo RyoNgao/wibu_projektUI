@@ -1,0 +1,87 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style-anime.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="anime.html" class="logo"><img src="images/logo-charlotte.png"></a>
+                <ul class="nav-list">
+                    <li class="nav-ava">
+                        <img src="images/ava.gif" class="avatar">
+                        <p class="user-name">Wibu</p>
+                    </li>
+                    <li class="nav-item">
+                        <a href="main.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Upload</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Popurlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Like</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">News</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Header ends -->
+    <section>
+        <div class="banner">
+            <div class="content">
+                <div class="tag">
+                    <a href="#"><i class="fa fa-hashtag"></i>RATE: 13+</a>
+                    <a href="#"><i class="fa fa-hashtag"></i>Drama</a>
+                    <a href="#"><i class="fa fa-hashtag"></i>Slice of life</a>
+                    <a href="#"><i class="fa fa-hashtag"></i>Super Power</a>
+                </div>
+                <h2>My <span>Soul</span> Your <span>Beats !</span></h2>
+                <p>
+                    In Japan the story follows the protagonist Yuu Otosaka, a boy who awakens the ability
+                    to temporarily possess another person for five seconds. Although hoping to use his ability
+                    to fraudulently live a carefree high school life, he is unexpectedly exposed by Nao Tomori,
+                    a girl who can make herself invisible to a specific target...
+                </p>
+                <a href="#" class="play" onclick="toggle();"><img src="images/play.png">Watch Trailer</a>
+                <div class="slide"></div>
+                <ul class="sci">
+                    <li><a href="@"><img src="images/facebook.png"></a></li>
+                    <li><a href="@"><img src="images/twitter.png"></a></li>
+                    <li><a href="@"><img src="images/instagram.png"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="trailer">
+            <video src="images/PV-charlotte.mp4" controls="true"></video>
+            <img src="images/close.png" class="close" onclick="toggle();">
+        </div>
+    </section>
+    <script>
+        function toggle() {
+            var trailer = document.querySelector('.trailer');
+            var video = document.querySelector('video');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
+    <script src="anime.js"></script>
+</body>
+
+</html>

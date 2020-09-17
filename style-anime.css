@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body::-webkit-scrollbar {
+    width: 0rem;
+}
+
 /* header */
 .container {
     width: 100%;
@@ -308,6 +312,7 @@ header {
     .nav-list {
         /* background-color: transparent; */
         padding: 0;
+        width: 45%;
     }
 
     .nav-link {

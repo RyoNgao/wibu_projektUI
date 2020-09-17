@@ -30,8 +30,9 @@
     width: 220px;
     margin: 35px auto;
     position: relative;
-    box-shadow: 0 0 20px 9px #ff61241f;
+    box-shadow: 0 0 20px 9px #27c2ff1f;
     border-radius: 30px;
+    color: white;
 }
 
 .toggle-btn {
@@ -82,7 +83,7 @@
     border-left: 0;
     border-top: 0;
     border-right: 0;
-    border-bottom: px solid #999;
+    border-bottom: 1px solid #999;
     outline: none;
     background: transparent;
 }
@@ -114,4 +115,10 @@ span {
 
 #register {
     left: 450px;
+}
+
+@media only screen and (max-width: 500px) {
+    .form-box {
+        margin: 35% auto;
+    }
 }

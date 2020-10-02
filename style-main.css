@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Bebas+Neue|Righteous|Concert+One|Source+Sans+Pro:400,900&display=swap');
 
 /* Gobal styles */
-/* social-icons*/
+/* logo*/
 *,
 *::before,
 *::after {
@@ -9,6 +9,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 
 :root {
     --main-font: 'Concert One', sans-serif;
@@ -122,6 +123,10 @@ header {
 
 .fa-times {
     display: none;
+}
+
+.logo img {
+    width: 200px;
 }
 
 .nav-list {

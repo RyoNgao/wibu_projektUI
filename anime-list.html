@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anime list</title>
-    <script defer src="anime-list.js"></script>
+    <script defer src="javascript/anime-list.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link rel="stylesheet" href="anime-list.css" />
 </head>
 
@@ -62,7 +63,7 @@
                             </path>
                         </g>
                     </svg>
-                    <span class="link-text">New Release</span>
+                    <span class="link-text">Account</span>
                 </a>
             </li>
 
@@ -80,7 +81,7 @@
                                 class="fa-primary"></path>
                         </g>
                     </svg>
-                    <span class="link-text">Popular</span>
+                    <span class="link-text">New Release</span>
                 </a>
             </li>
 
@@ -98,7 +99,7 @@
                                 class="fa-primary"></path>
                         </g>
                     </svg>
-                    <span class="link-text">Like</span>
+                    <span class="link-text">Popular</span>
                 </a>
             </li>
 
@@ -145,6 +146,25 @@
         </ul>
     </nav>
     <!-- navbar ends -->
+
+    <!-- header -->
+    <main class="logo-project-anime-list">
+        <a href="#" class="logo-anime-list">
+            <img src="images/logo-wibu-projekt.png" alt="">
+        </a>
+    </main>
+    <!-- header ends -->
+
+    <!-- search -->
+    <section class="search-anime-list">
+        <div class="search-box">
+            <input class="search-txt" type="text" name="" placeholder="Type to search">
+            <a class="search-btn" href="#">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+    </section>
+    <!-- search ends -->
 
     <!-- anime popular -->
     <section class="card-list">
@@ -353,7 +373,7 @@
         <article class="card-secound">
             <header class="card-first-header">
                 <h1>New Release</h1>
-                <p>Season winter 2020</p>
+                <p>Season Winter 2020</p>
             </header>
         </article>
 
@@ -550,40 +570,70 @@
     <section class="card-list">
         <article class="card-third">
             <header class="card-first-header">
-                <h1>Seiju</h1>
-                <p>Popular this year</p>
+                <h1>Seiyuu</h1>
+                <p>Popular This Season</p>
             </header>
         </article>
 
         <article class="card-seju">
             <header class="card-header">
-                <p>Rate: 13+</p>
-                <h2>Kaguya-sama: Love</h2>
-                <a class="author-poster" href="anime.html">
-                    <img src="images/anime-list-release-1.jpg">
-                </a>
+                <p>The most Seiyuu this season</p>
+                <h2>Inori Minase <p>(水瀬 いのり)</p>
+                </h2>
             </header>
 
-            <div class="card-author">
-                <a class="author-avatar" href="#">
-                    <img src="images/anime-list-popular-ava-6.png" />
+            <div class="card-author-seju">
+                <a class="author-avatar-seju" href="#">
+                    <img src="images/inoriminase.png" />
                 </a>
-                <svg class="half-circle" viewBox="0 0 106 57">
+                <svg class="half-circle-seju" viewBox="0 0 106 57">
                     <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
                 </svg>
-                <div class="author-name">
-                    <div class="author-name-prefix">Studio</div>
-                    A-1 Pictures
+                <div class="author-name-seju">
+                    <div class="author-name-prefix">Age(24)</div>
+                    Dec 2,1995
+                    <div class="author-name-prefix">Born</div>
+                    Tokyo, Japan
                 </div>
             </div>
+
+            <h4>Voice Characters</h4>
+
+            <div class="character-seju">
+                <a href="#" class="character">
+                    <img src="images/inori1.png">
+                </a>
+                <a href="#" class="character">
+                    <img src="images/inori2.png">
+                </a>
+                <a href="#" class="character">
+                    <img src="images/inori3.png">
+                </a>
+                <a href="#" class="character">
+                    <img src="images/inori4.png">
+                </a>
+                <a href="#" class="character">
+                    <img src="images/inori5.png">
+                </a>
+            </div>
             <div class="tags">
-                <a href="#">drama</a>
-                <a href="#">school</a>
-                <a href="#">...</a>
+                <a href="#">twitter</a>
+                <a href="#">website</a>
+                <a href="#">fandom</a>
             </div>
         </article>
     </section>
     <!-- seiju popurlar ends -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-left">
+                <h3>Product by</h3>
+                <img src="images/logo-wibu-projekt.png" alt="">
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

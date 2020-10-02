@@ -2,7 +2,6 @@
 
 :root {
     font-size: 16px;
-    font-family: 'Open Sans';
     --text-primary: #b6b6b6;
     --text-secondary: #ececec;
     --bg-primary: #23232e;
@@ -129,13 +128,102 @@ body::-webkit-scrollbar-thumb {
 
 /* navbar ends */
 
+/* tags */
+
+/* header */
+.logo-project-anime-list {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    background-color: rgb(75, 75, 75, .5);
+}
+
+.logo-anime-list {
+    padding: 1rem 30rem;
+}
+
+.logo-anime-list img {
+    width: 350px;
+    height: 175px;
+}
+
+/* header ends */
+
+/* search */
+
+.search-anime-list {
+    display: flex;
+    padding: 5rem 5rem;
+}
+
+.search-box {
+    position: absolute;
+    top: 23%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background: var(--bg-secondary);
+    border-radius: 40px;
+    height: 40px;
+}
+
+.search-box:hover>.search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-box:hover>.search-btn {
+    background: var(--text-secondary);
+    color: var(--bg-secondary);
+}
+
+.search-btn {
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--bg-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    color: var(--text-secondary);
+    cursor: pointer;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: var(--text-secondary);
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+    font-weight: bold;
+}
+
+.search-btn>i {
+    font-size: 30px;
+}
+
+/* search ends */
+
 a {
     text-decoration: none;
 }
 
 .card-list {
     display: flex;
-    padding: 8.5rem 5rem;
+    padding: 3rem 5rem;
     overflow-x: scroll;
 }
 
@@ -234,7 +322,7 @@ a {
 
 .card-seju {
     height: 350px;
-    width: 400px;
+    width: 250px;
     min-width: 250px;
     padding: 1.5rem;
     border-radius: 16px;
@@ -299,6 +387,71 @@ a {
     grid-template-columns: 75px 1fr;
     align-items: center;
     position: relative;
+}
+
+.card-author-seju {
+    margin: 0 0 0;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    position: relative;
+}
+
+.author-avatar-seju {
+    grid-area: auto;
+    align-self: start;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.author-avatar-seju img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: block;
+    overflow: hidden;
+    margin: 0px 10px;
+}
+
+.author-name-seju {
+    grid-area: auto;
+    box-sizing: border-box;
+}
+
+.author-name-prefix-seju {
+    font-style: normal;
+    font-weight: 700;
+    color: #7a7a8c;
+}
+
+.half-circle-seju {
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    width: 90px;
+    height: 70px;
+    fill: none;
+    stroke: #e100ff;
+    stroke-width: 8;
+    stroke-linecap: round;
+    pointer-events: none;
+}
+
+.character-seju {
+    margin: 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    align-items: center;
+    position: relative;
+}
+
+.character img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    overflow: hidden;
+    margin: 0 -5px;
 }
 
 .author-avatar {
@@ -392,6 +545,24 @@ a {
     position: relative;
 }
 
+/* footer */
+footer {
+    padding: 1rem 0;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.footer-left {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-left img {
+    width: 10rem;
+}
+
 /* Small screens */
 @media only screen and (max-width: 600px) {
     .navbar {
@@ -412,11 +583,23 @@ a {
         justify-content: center;
     }
 
-    main {
-        margin: 0;
+    /* navbar ends */
+
+    /* header */
+    .logo-anime-list {
+        padding: 0 0 0 1rem;
     }
 
-    /* navbar ends */
+    /* header ends */
+    .search-box:hover>.search-txt {
+        width: 130px;
+        padding: 0 10px;
+    }
+
+    .search-box {
+        top: 20%;
+        left: 49%;
+    }
 }
 
 /* Large screens */

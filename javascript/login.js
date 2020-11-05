@@ -1,15 +1,11 @@
-var x = document.getElementById("login");
-var y = document.getElementById("register");
-var z = document.getElementById("btn");
+const sign_in_btn = document.querySelector("#sign-in-btn");
+const sign_up_btn = document.querySelector("#sign-up-btn");
+const container = document.querySelector(".container");
 
-function register() {
-    x.style.left = "-400px";
-    y.style.left = "50px";
-    z.style.left = "110px";
-}
+sign_up_btn.addEventListener("click", () => {
+  container.classList.add("sign-up-mode");
+});
 
-function login() {
-    x.style.left = "50px";
-    y.style.left = "450px";
-    z.style.left = "0px";
-}
+sign_in_btn.addEventListener("click", () => {
+  container.classList.remove("sign-up-mode");
+});

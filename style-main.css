@@ -178,7 +178,8 @@ header {
 }
 
 .nav-item {
-    border-bottom: 2px solid rgba(255, 255, 255, .3);
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 54, 54, 0.3);
 }
 
 .nav-link {

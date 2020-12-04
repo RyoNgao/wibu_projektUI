@@ -5,205 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
     <link rel="stylesheet" href="admin.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
-    
-    <div class="container">
-        <nav class="navbar" onclick="toggleSidebar()">
-            <div class="nav-icon">
-                <i class="fa fa-bars"></i>
-            </div>
-            <div class="navbar-left">
-                <a href="#">Subscribers</a>
-                <a href="#">Video Management</a>
-                <a class="active-link" href="#">Admin</a>
-            </div>
-            <div class="navbar-right">
-                <a href="#">
-                    <i class="fa fa-search"></i>
-                </a>
-                <a href="#">
-                    <i class="fa fa-search"></i>
-                </a>
-                <a href="#">
-                    <img width="30" src="../images/ava.gif" alt="">
-                </a>
-            </div>
-        </nav>
+    <div class="wrapper">
+        <div class="container">
+            <div class="dashboard">
+                <div class="left">
+                    <span class="left__icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
 
-        <main>
-            <div class="main-container">
-
-                <div class="main-title">
-                    <img src="../images/ava.gif">
-                    <div class="main-greeting">
-                        <h1>Hello</h1>
-                        <p>Welcome to your admin dashboard</p>
+                    <div class="left__content">
+                        <div class="left__logo">Admin</div>
+                        <div class="left__profile">
+                            <div class="left__image"><img src="../images/ava.gif" alt=""></div>
+                            <p class="left__name">Bui Son Thai</p>
+                        </div>
+                        <ul class="left__menu">
+                            <li class="left__menuItem">
+                                <a href="index.html" class="left__title"><img src="assets/icon-dashboard.svg" alt="">Dashboard</a>
+                            </li>
+                            <li class="left__menuItem">
+                                <div class="left__title"><img src="assets/icon-tag.svg" alt="">Notification<img class="left__iconDown" src="assets/arrow-down.svg" alt=""></div>
+                                <div class="left__text">
+                                    <a class="left__link" href="insert_product.html">Insert Notification</a>
+                                    <a class="left__link" href="view_product.html">View All</a>
+                                </div>
+                            </li>
+                            <li class="left__menuItem">
+                                <div class="left__title"><img src="assets/icon-edit.svg" alt="">Reports<img class="left__iconDown" src="assets/arrow-down.svg" alt=""></div>
+                                <div class="left__text">
+                                    <a class="left__link" href="insert_p_category.html">Processed</a>
+                                    <a class="left__link" href="view_p_category.html">Hasn't processed</a>
+                                </div>
+                            </li>
+                            <li class="left__menuItem">
+                                <div class="left__title"><img src="assets/icon-book.svg" alt="">The Rules<img class="left__iconDown" src="assets/arrow-down.svg" alt=""></div>
+                                <div class="left__text">
+                                    <a class="left__link" href="insert_coupon.html">Insert rules</a>
+                                    <a class="left__link" href="view_coupons.html">View All</a>
+                                </div>
+                            </li>
+                            <li class="left__menuItem">
+                                <a href="view_customers.html" class="left__title"><img src="assets/icon-users.svg" alt="">Request</a>
+                            </li>
+                            <li class="left__menuItem">
+                                <div class="left__title"><img src="assets/icon-user.svg" alt="">User<img class="left__iconDown" src="assets/arrow-down.svg" alt=""></div>
+                                <div class="left__text">
+                                    <a class="left__link" href="insert_admin.html">Banned</a>
+                                    <a class="left__link" href="view_admins.html">View All</a>
+                                </div>
+                            </li>
+                            <li class="left__menuItem">
+                                <div class="left__title"><img src="assets/icon-settings.svg" alt="">Settings<img class="left__iconDown" src="assets/arrow-down.svg" alt=""></div>
+                                <div class="left__text">
+                                    <a class="left__link" href="insert_slide.html">Setting Account</a>
+                                    <a class="left__link" href="view_slides.html">Setting pages</a>
+                                </div>
+                            </li>
+                            <li class="left__menuItem">
+                                <a href="" class="left__title"><img src="assets/icon-logout.svg" alt="">Logout</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+                <div class="right">
 
-                <div class="main-cards">
-                    <div class="card">
-                        <i class="fa fa-calendar fa-2x text-lightblue"></i>
-                        <div class="card-inner">
-                            <p class="text-primary-p">Number of Balance</p>
-                            <span class="font-bold text-title">145</span>
-                        </div>
+                    <div class="search-wrapper">
+                        <span class="ti-search"></span>
+                        <input type="search" placeholder="Search">
                     </div>
+                    
+                    <div class="right__content">
 
-                    <div class="card">
-                        <i class="fa fa-calendar fa-2x text-red"></i>
-                        <div class="card-inner">
-                            <p class="text-primary-p">Number of Balance</p>
-                            <span class="font-bold text-title">145</span>
+                        <div class="right__cards">
+                            <a class="right__card" href="view_product.html">
+                                <div class="right__cardTitle">Balance Account</div>
+                                <div class="right__cardNumber">1,478 $</div>
+                                <div class="right__cardDesc">View All<img src="assets/arrow-right.svg" alt=""></div>
+                            </a>
+                            <a class="right__card" href="view_customers.html">
+                                <div class="right__cardTitle">Request</div>
+                                <div class="right__cardNumber">57</div>
+                                <div class="right__cardDesc">View All<img src="assets/arrow-right.svg" alt=""></div>
+                            </a>
+                            <a class="right__card" href="view_p_category.html">
+                                <div class="right__cardTitle">Report has processed</div>
+                                <div class="right__cardNumber">137</div>
+                                <div class="right__cardDesc">View All<img src="assets/arrow-right.svg" alt=""></div>
+                            </a>
+                            <a class="right__card" href="view_orders.html">
+                                <div class="right__cardTitle">Report hasn't processed</div>
+                                <div class="right__cardNumber">172</div>
+                                <div class="right__cardDesc">View All<img src="assets/arrow-right.svg" alt=""></div>
+                            </a>
                         </div>
-                    </div>
 
-                    <div class="card">
-                        <i class="fa fa-calendar fa-2x text-lightblue"></i>
-                        <div class="card-inner">
-                            <p class="text-primary-p">Number of Balance</p>
-                            <span class="font-bold text-title">145</span>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <i class="fa fa-calendar fa-2x text-lightblue"></i>
-                        <div class="card-inner">
-                            <p class="text-primary-p">Number of Balance</p>
-                            <span class="font-bold text-title">145</span>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="charts">
-
-                    <div class="charts-left">
-                        <div class="charts-left-title">
-                            <div>
-                                <h1>Daily Report</h1>
-                                <p>Akihabara, Japan</p>
+                        <div class="right__table">
+                            <div class="charts-left">
+                                <div class="charts-left-title">
+                                    <div>
+                                        <h1>Report per week</h1>
+                                        <p>Anicomix(Film)</p>
+                                    </div>
+                                    <i class="fa fa-usd"></i>
+                                </div>
+                                <div id="apex1"></div>
                             </div>
-                            <i class="fa fa-usd"></i>
-                        </div>
-                        <div id="apex1"></div>
-                    </div>
-
-                    <div class="charts-right">
-                        <div class="charts-right-title">
-                            <div>
-                                <h1>Stats Reports</h1>
-                                <p>Tokyo,Japan</p>
-                            </div>
-                            <i class="fa fa-usd"></i>
-                        </div>
-
-                        <div class="charts-right-cards">
-
-                            <div class="card1">
-                                <h1>Income</h1>
-                                <p>$50,600</p>
-                            </div>
-                            <div class="card2">
-                                <h1>Income</h1>
-                                <p>$50,600</p>
-                            </div>
-                            <div class="card3">
-                                <h1>Income</h1>
-                                <p>$50,600</p>
-                            </div>
-                            <div class="card4">
-                                <h1>Income</h1>
-                                <p>$50,600</p>
-                            </div>
-
+                            <a href="" class="right__tableMore"><p>View All.</p> <img src="assets/arrow-right-black.svg" alt=""></a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </main>
-
-        <div id="sidebar">
-            <div class="sidebar-title">
-                <div class="sidebar-img">
-                    <img src="../images/ava.gif" alt="">
-                    <h1>Coder</h1>
-                </div>
-                <i class="fa fa-times" id="sidebarIcon" onclick="closeSidebar()"></i>
-            </div>
-
-            <div class="sidebar-menu">
-                <div class="sidebar-link active-menu-link">
-                    <i class="fa fa-home"></i>
-                    <a href="#">Dashboard</a>
-                </div>
-                <h2>MNG</h2>
-                <div class="sidebar-link">
-                    <i class="fa fa-user-secret"></i>
-                    <a href="#">Admin Management</a>
-                </div>
-
-                <div class="sidebar-link">
-                    <i class="fa fa-user-secret"></i>
-                    <a href="#">Admin Management</a>
-                </div>
-
-                <div class="sidebar-link">
-                    <i class="fa fa-user-secret"></i>
-                    <a href="#">Admin Management</a>
-                </div>
-
-                <div class="sidebar-link">
-                    <i class="fa fa-user-secret"></i>
-                    <a href="#">Admin Management</a>
-                </div>
-
-                <div class="sidebar-link">
-                    <i class="fa fa-user-secret"></i>
-                    <a href="#">Admin Management</a>
-                </div>
-
-                <div class="sidebar-link">
-                    <i class="fa fa-user-secret"></i>
-                    <a href="#">Admin Management</a>
-                </div>
-
-                <div class="sidebar-link">
-                    <i class="fa fa-user-secret"></i>
-                    <a href="#">Admin Management</a>
-                </div>
-
-                <div class="sidebar-link">
-                    <i class="fa fa-user-secret"></i>
-                    <a href="#">Admin Management</a>
-                </div>
-
-                <h2>PAYROLL</h2>
-
-                <div class="sidebar-link">
-                    <i class="fa fa-user-secret"></i>
-                    <a href="#">Admin Management</a>
-                </div>
-
-                <div class="sidebar-link">
-                    <i class="fa fa-user-secret"></i>
-                    <a href="#">Admin Management</a>
-                </div>
-
-                <div class="sidebar-link">
-                    <i class="fa fa-user-secret"></i>
-                    <a href="#">Admin Management</a>
-                </div>
-
-                <div class="sidebar-logout">
-                    <i class="fa fa-power-off"></i>
-                    <a href="#">Logout</a>
                 </div>
             </div>
         </div>
-
     </div>
 
     <!-- Apex Charts CDN -->
